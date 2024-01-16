@@ -1,2 +1,2 @@
 "# dsa-java" 
-#my collection of data structures and algorithm in java
+#my collection of data structures and algorithms in java
