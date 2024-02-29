@@ -23,7 +23,6 @@ public class FindElementInArray{
 
         int i = 0;
         int N = arr.length-1;
-        // arr[N] = target;
         while(arr[i]!=target) i++;
         if(i==N) return false;
         return true;
