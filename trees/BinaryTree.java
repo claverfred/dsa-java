@@ -121,4 +121,24 @@ class BinaryTree {
     System.out.print(node.value + " ");
   }
 
+  private void levelOrderTraversal(Node root){
+    Queue<Node> treeNodeQueue = new LinkedList<>();
+    
+    if(root == null)
+    return;
+    
+    treeNodeQueue.add(root);
+
+    while(!treeNodeQueue.isEmpty){
+      Node treeNode = treeNodeQueue.poll();
+      System.out.print(treeNode+ "->");
+
+      if(treeNode.left !=null)
+      treeNodeQueue.add(treeNode.left);
+
+      if(treeNode.right != null)
+      treeNodeQueue.add(treeNode.right);
+    }
+  }
+
 }
